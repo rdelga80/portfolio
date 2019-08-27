@@ -1,0 +1,203 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.sloth-cont {
+  position: absolute;
+  transition: top 200s, left 2s;
+}
+
+.sloth-cont img {
+  height: 180px;
+  transform: rotateZ(90deg);
+}
+
+.skill-highlight {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: all 2s cubic-bezier(0.35,-0.01, 0.76, 2.4);
+}
+
+.skill-highlight img {
+  width: 300px;
+}
+
+.planet h2 {
+  color: white;
+}
+
+.planet-info {
+  position: absolute;
+  display: inline-flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  top: 100px;
+  left: 350px;
+  max-width: 600px;
+  max-height: 600px;
+  overflow-y: scroll;
+  padding: 20px;
+  background-color: rgba(155,155,155,0.6);
+  transition: all 2s;
+}
+
+.planet-info div div img {
+  width: 267px;
+  display: inline-flex;
+}
+
+.skill-circle {
+  position: absolute;
+  opacity: 0;
+  transition: all 2s;
+}
+
+.skill-circle img {
+  width: 130px;
+}
+
+.planet img {
+  width: 80px;
+}
+
+.planet:nth-child(1) {
+  top: 0px;
+  left: 0px;
+  -webkit-animation: vueOrbit 60s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: vueOrbit 60s linear infinite; /* Firefox 5-15 */
+  -o-animation: vueOrbit 60s linear infinite; /* Opera 12+ */
+  animation: vueOrbit 60s linear infinite; /* Chrome, Firefox 16+, 
+                                            IE 10+, Safari 5 */
+}
+
+.planet:nth-child(2) {
+  top: 0px;
+  left: 0px;
+  -webkit-animation: expressOrbit 60s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: expressOrbit 60s linear infinite; /* Firefox 5-15 */
+  -o-animation: expressOrbit 60s linear infinite; /* Opera 12+ */
+  animation: expressOrbit 60s linear infinite; /* Chrome, Firefox 16+, 
+                                            IE 10+, Safari 5 */
+}
+
+.planet:nth-child(4) {
+  top: 0px;
+  left: 0px;
+  -webkit-animation: mongoOrbit 60s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: mongoOrbit 60s linear infinite; /* Firefox 5-15 */
+  -o-animation: mongoOrbit 60s linear infinite; /* Opera 12+ */
+  animation: mongoOrbit 60s linear infinite; /* Chrome, Firefox 16+, 
+                                            IE 10+, Safari 5 */
+}
+
+.planet:nth-child(5) {
+  top: 0px;
+  left: 0px;
+  -webkit-animation: nodeOrbit 60s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: nodeOrbit 60s linear infinite; /* Firefox 5-15 */
+  -o-animation: nodeOrbit 60s linear infinite; /* Opera 12+ */
+  animation: nodeOrbit 60s linear infinite; /* Chrome, Firefox 16+, 
+                                            IE 10+, Safari 5 */
+}
+
+.planet {
+  position: absolute;
+}
+@-webkit-keyframes vueOrbit {
+    from { -webkit-transform: rotate(90deg) translateX(118px) rotate(90deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(118px) rotate(-360deg); }
+}
+
+@-moz-keyframes vueOrbit {
+    from { -moz-transform: rotate(90deg) translateX(118px) rotate(90deg); }
+    to   { -moz-transform: rotate(360deg) translateX(118px) rotate(-360deg); }
+}
+
+@-o-keyframes vueOrbit {
+    from { -o-transform: rotate(90deg) translateX(118px) rotate(90deg); }
+    to   { -o-transform: rotate(360deg) translateX(118px) rotate(-360deg); }
+}
+
+@keyframes vueOrbit {
+    from { transform: rotate(90deg) translateX(118px) rotate(90deg); }
+    to   { transform: rotate(360deg) translateX(118px) rotate(-360deg); }
+}
+
+@-webkit-keyframes expressOrbit {
+    from { transform: rotate(180deg) translateX(245px) rotate(180deg); }
+    to   { transform: rotate(360deg) translateX(245px) rotate(-360deg); }
+}
+
+@-moz-keyframes expressOrbit {
+    from { transform: rotate(180deg) translateX(245px) rotate(180deg); }
+    to   { transform: rotate(360deg) translateX(245px) rotate(-360deg); }
+}
+
+@-o-keyframes expressOrbit {
+    from { transform: rotate(180deg) translateX(245px) rotate(180deg); }
+    to   { transform: rotate(360deg) translateX(245px) rotate(-360deg); }
+}
+
+@keyframes expressOrbit {
+    from { transform: rotate(180deg) translateX(245px) rotate(180deg); }
+    to   { transform: rotate(360deg) translateX(245px) rotate(-360deg); }
+}
+
+@-webkit-keyframes mongoOrbit {
+    from { transform: rotate(-90deg) translateX(350px) rotate(-90deg); }
+    to   { transform: rotate(360deg) translateX(350px) rotate(-360deg); }
+}
+
+@-moz-keyframes mongoOrbit {
+    from { transform: rotate(-90deg) translateX(350px) rotate(-90deg); }
+    to   { transform: rotate(360deg) translateX(350px) rotate(-360deg); }
+}
+
+@-o-keyframes mongoOrbit {
+    from { transform: rotate(-90deg) translateX(350px) rotate(-90deg); }
+    to   { transform: rotate(360deg) translateX(350px) rotate(-360deg); }
+}
+
+@keyframes mongoOrbit {
+    from { transform: rotate(-90deg) translateX(350px) rotate(-90deg); }
+    to   { transform: rotate(360deg) translateX(350px) rotate(-360deg); }
+}
+
+@-webkit-keyframes nodeOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(435px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(435px) rotate(-360deg); }
+}
+
+@-moz-keyframes nodeOrbit {
+    from { -moz-transform: rotate(0deg) translateX(435px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(435px) rotate(-360deg); }
+}
+
+@-o-keyframes nodeOrbit {
+    from { -o-transform: rotate(0deg) translateX(435px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(435px) rotate(-360deg); }
+}
+
+@keyframes nodeOrbit {
+    from { transform: rotate(0deg) translateX(435px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(435px) rotate(-360deg); }
+}

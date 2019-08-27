@@ -1,0 +1,42 @@
+html, body {
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #d3379d, #ff4d74, #ff7e4c, #f9b235, #d5e14e);
+}
+
+#maincontainer {
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0px;
+}
+
+.name-container {
+  position: relative;
+}
+
+.name {
+  position: relative;
+  display: inline-flex;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  color: white;
+  font-size: 2.3em;
+}
+
+.subname {
+  opacity: 0;
+  font-size: 1.2em;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.name div {
+  -webkit-transition: all 2s cubic-bezier(0.49, -1.57, 0.46, 2.26);
+  -o-transition: all 2s cubic-bezier(0.49, -1.57, 0.46, 2.26);
+  transition: all 2s cubic-bezier(0.49, -1.57, 0.46, 2.26);
+}
